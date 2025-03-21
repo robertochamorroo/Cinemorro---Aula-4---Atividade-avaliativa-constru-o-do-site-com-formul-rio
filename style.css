@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+    padding-top:  120px;
+}
+
+header {
+    background-color: #3348b5; 
+    color: white;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    padding: 10px;
+    font-size: 1vw; 
+    z-index: 1000; 
+}
+
+.logo {
+    margin-right: -50px;
+    width: 26%;
+    padding-left: 25px;
+} 
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex; 
+}
+
+header nav ul li {
+    padding: 0 3vw; 
+}
+
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header .button-contato button {
+    padding: 12px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: times;
+    background-color: rgb(219, 225, 225);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#formulario {
+    padding: 20px;
+    background-color: #222;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 90px;
+    margin-top: 40px;
+}
+
+#formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#formulario h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.field input,
+.field textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.field input[type="radio"] {
+    margin-right: 5px;
+}
+
+.field.radiobox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+input[type="submit"] {
+    padding: 15px 0;
+    font-size: 1.2rem;
+    background-color: #3348b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #5069d3;
+}
+
+
+
+.filmes-destaque {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+    color: white;
+}
+
+.filmes-destaque h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.filme {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.filme img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.filme h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.filme p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+
+
+
+
+.combos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+    color: white;
+}
+
+.combos h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.combo {
+    display: inline-block;
+    width: 600px;
+    margin: 20px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.combo h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.combo ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.combo ul li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.combo p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 15px;
+}
+
+
+.saibamais {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #222;
+    color: white;
+}
+
+.saibamais h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.saibamais p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.saibamais .container {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.8); /* Fundo com leve transparência */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Sombra suave para destacar */
+}
+
+.logo-cinemorro {
+    max-width: 400px; /* Ajuste o tamanho conforme necessário */
+    margin: 20px 0; /* Adiciona margem em cima e embaixo */
+    border-radius: 20px;
+}

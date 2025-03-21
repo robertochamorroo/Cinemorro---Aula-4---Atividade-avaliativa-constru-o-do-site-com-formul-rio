@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    background-color: rgb(37, 37, 181);
+    height: 120px;
+    display: flex;
+    justify-content: space-between; /* Alinha logo e menu em cada extremidade */
+    padding: 0 30px; /* Adiciona espaçamento nas laterais */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil */
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .Logo {
+    height: 80px; /* Define uma altura padrão para a logo */
+    width: auto;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px; /* Cria espaço entre os itens do menu */
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s; /* Transições suaves para cor e escala */
+}
+
+header nav ul li a:hover {
+    color: #fce148; /* Muda a cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do link ao passar o mouse */
+}
+
+/* Responsividade: Ajustar para telas pequenas */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    header .Logo {
+        height: 60px; /* Reduz a altura da logo em telas menores */
+    }
+}
